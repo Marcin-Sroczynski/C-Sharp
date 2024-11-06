@@ -1,0 +1,51 @@
+using System;
+using System.IO;
+
+
+class Program 
+{
+    static void Main(string [] args)
+    {
+        //destynacje skąd dokąd skopiowac
+        string sourceDir = @"C:\downloads";
+        string destinationTunes = @"C:\...itunes";
+        string destinaton2024 = @"D:\muza\2024";
+    }
+
+    static void copyFiles(sourceDir, destinationTunes)
+    {
+        try
+        {
+            //sprawdz czy destynacje istnieją
+            if (!Directory.Exists(sourceDir))
+            {
+                Console.WriteLine("Source directory does not exist");
+                return;
+            }
+
+            //sprawdz czy destynacje docelowe istnieją
+            if (!Directory.Exists(destinationTunes)) || (!Directory.Exists(destinaton2024))
+            {
+                Console.WriteLine("Destination itunes or 2024 does not exist or is incorrect")
+                return;
+            }
+            
+            //pokaz liste .mp3 w donloads
+            string [] files = Directory.GetFiles(sourceDir);
+            Directory.GetFiles().Contains(".mp3")
+            if (files.Contains(".mp3"))
+            {
+                
+            }
+            
+        }
+        
+
+    }
+
+}
+
+
+
+
+
